@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book Todo List Apps</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1 align="center"><span style="color: red;">Book</span> Todo List App</h1>
+  </header>
+
+  <div class="wrapper">
+    <div class="container bg-white shadow" id="add-todo">
+      <h2 class="container-header text-center">Tambahkan Daftar Buku</h2>
+      <form class="form" action="#" id="form">
+        <div class="form-group form-title">
+          <label for="title"><strong>Masukkan Nama Buku : </strong></label>
+          <input type="text" id="title" name="title" required autocomplete="off">
+        </div>
+        <div class="form-group form-title">
+          <label for="title"><strong>Masukkan Nama Penulis : </strong></label>
+          <input type="text" id="author" name="author" required autocomplete="off">
+        </div>
+        <div class="form-group form-title">
+          <label for="title"><strong>Masukkan Tahun Buku : </strong></label>
+          <input type="number" id="year" name="year" required autocomplete="off">
+        </div>
+        <input type="submit" value="Simpan" name="Submit" class="btn-submit">
+      </form>
+    </div>
+
+    <div class="container">
+      <h2 class="container-header">Rak 1 : Belum selesai dibaca</h2>
+      <div class="list-buku" id="todos">
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="container-header">Rak 2 : Selesai dibaca</h2>
+      <div class="list-buku" id="completed-todos">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
